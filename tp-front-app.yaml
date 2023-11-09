@@ -13,7 +13,7 @@ spec:
         app: tp-front-app
     spec:
       containers:
-      - image: acoursove2/tp-front-app:latest
+      - image: acoursove2/tp-front-app:1.0
         name: tp-front-app
         ports:
         - containerPort: 80
