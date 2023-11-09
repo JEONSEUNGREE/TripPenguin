@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tp-front-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tp-front-app
+  template:
+    metadata:
+      labels:
+        app: tp-front-app
+    spec:
+      containers:
+      - image: acoursove2/tp-front-app:latest
+        name: tp-front-app
+        ports:
+        - containerPort: 80
