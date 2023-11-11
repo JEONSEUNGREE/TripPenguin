@@ -5,7 +5,7 @@ metadata:
 spec:
   type: NodePort
   selector:
-    app.kubernetes.io/name: tp-back-app
+    app: tp-back-app
   ports:
     - port: 8080
       targetPort: 8080
