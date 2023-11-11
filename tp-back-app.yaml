@@ -16,4 +16,4 @@ spec:
       - image: acoursove2/tp-back-app:latest
         name: tp-back-app
         ports:
-        - containerPort: 3001
+        - containerPort: 8080
