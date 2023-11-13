@@ -17,3 +17,6 @@ spec:
         name: tp-back-app
         ports:
         - containerPort: 3000
+        envFrom:
+          - configMapRef:
+              name: tp-back-app-dev-config
