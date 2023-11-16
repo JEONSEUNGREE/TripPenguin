@@ -20,3 +20,11 @@ spec:
         envFrom:
           - configMapRef:
               name: tp-back-app-dev-config
+        volumeMounts:
+        - name: tp-back-app
+          mountPath: /tp-penguin-app
+      volumes:
+      - name: tp-back-app
+        persistentVolumeClaim:
+          claimName: nfs-pvc-tp-back-app
+
